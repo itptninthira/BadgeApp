@@ -1,14 +1,20 @@
 <ion-header>
-  <ion-navbar>
-    <ion-title>
-      Ionic Blank
+  <ion-navbar color="danger">
+    <ion-title >
+      Example Badge
     </ion-title>
   </ion-navbar>
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+<h3>Ainthira Noo</h3>
+
+ <ion-list>
+   <ion-item *ngFor="let item of items">
+      <p>ID Subject :
+        <ion-badge item-end><b>{{ item.id }}</b></ion-badge>
+      </p>
+      <p>Name Subject : <b>{{ item.name }}</b></p>
+   </ion-item>
+ </ion-list>
 </ion-content>
